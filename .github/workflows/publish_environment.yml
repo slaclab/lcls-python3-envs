@@ -1,0 +1,25 @@
+name: Publish release
+
+on:  
+  push:
+    tags:
+      - '*'
+      
+jobs:
+  build:
+    env:
+      ENVIRONMENT_NAME: python3.8env
+#      TEST_FILE: run-test.sh
+    runs-on: ubuntu-latest
+    name: Build environment
+    steps:
+      - name: Build environment
+        uses: slaclab/lcls-rhel6-conda-pack@v1.1
+      - name: Upload artifact to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ env.ENVIRONMENT_NAME }}.tar.gz
+          tag: ${{ github.ref }}
+          overwrite: true
+          file_glob: true
