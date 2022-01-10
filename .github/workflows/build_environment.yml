@@ -9,6 +9,7 @@ jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3.8env
+      TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment
     steps:
