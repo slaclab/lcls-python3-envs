@@ -49,6 +49,7 @@ dependencies:
   - cytoolz=0.11.0
   - dask=2021.4.1
   - dask-core=2021.4.1
+  - dateparser=1.1.0
   - dbus=1.13.6
   - deap=1.3.1
   - decorator=5.0.7
@@ -237,7 +238,7 @@ dependencies:
   - pyasn1=0.4.8
   - pyasn1-modules=0.2.7
   - pycparser=2.20
-  - pydm=1.11.1
+  - pydm=1.12.0
   - pyepics=3.4.3
   - pyglet=1.5.16
   - pygments=2.9.0
@@ -249,7 +250,7 @@ dependencies:
   - pyqt-impl=5.12.3
   - pyqt5-sip=4.19.18
   - pyqtchart=5.12
-  - pyqtgraph=0.12.1
+  - pyqtgraph=0.11.0
   - pyqtwebengine=5.12.1
   - pyrsistent=0.17.3
   - pysocks=1.7.1
