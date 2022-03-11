@@ -1,4 +1,4 @@
-name: slacpython3.8env
+name: python3.8env
 channels:
   - conda-forge
   - defaults
