@@ -58,6 +58,7 @@ dependencies:
   - pytables
   - tensorflow
   - theano
+  - treelib
   - pip:
     - git+git://github.com/slaclab/edmbutton
     - git+git://github.com/slaclab/edlgenerator
@@ -69,7 +70,7 @@ dependencies:
     - git+git://github.com/slaclab/pyca
     - ipaddress
     - Cheetah3
-    - opencv-contrib-python
+    - opencv-contrib-python==4.2.0.34
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
