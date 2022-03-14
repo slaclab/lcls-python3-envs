@@ -58,6 +58,7 @@ dependencies:
   - pytables
   - tensorflow
   - theano
+  - treelib
   - pip:
     - git+git://github.com/slaclab/edmbutton
     - git+git://github.com/slaclab/edlgenerator
