@@ -14,6 +14,8 @@ dependencies:
   - deap
   - epics-base
   - epicscorelibs
+  - gpy
+  - gym
   - h5py
   - hdf5
   - impact-t
@@ -25,8 +27,10 @@ dependencies:
   - keras
   - lume-impact
   - matplotlib
+  - mock
   - mpi
   - notebook
+  - numexpr
   - numpy
   - openmpi
   - openpmd-beamphysics
@@ -51,13 +55,28 @@ dependencies:
   - seaborn
   - six
   - sqlite
+  - pytables
   - tensorflow
   - theano
   - pip:
     - git+git://github.com/slaclab/edmbutton
+    - git+git://github.com/slaclab/edlgenerator
+    - git+git://github.com/slaclab/slacepics
+    - git+git://github.com/slaclab/subprocessca
+    - git+git://github.com/slaclab/edef
     - matlab-wrapper
     - git+git://github.com/slaclab/meme
     - git+git://github.com/slaclab/pyca
     - ipaddress
     - Cheetah3
-    - opencv-contrib-python==4.2.0.34
+    - opencv-contrib-python
+#
+# Stuff that isn't on PyPI or GitHub that is manually installed in prod
+# epics-batch-get
+# gauge-widget
+# lcls-parameters
+# logicgate
+# matlog
+# model
+# physicselog
+# wmctrl
