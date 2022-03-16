@@ -60,14 +60,14 @@ dependencies:
   - theano
   - treelib
   - pip:
-    - git+git://github.com/slaclab/edmbutton
-    - git+git://github.com/slaclab/edlgenerator
-    - git+git://github.com/slaclab/slacepics
-    - git+git://github.com/slaclab/subprocessca
-    - git+git://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edmbutton
+    - git+https://github.com/slaclab/edlgenerator
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
+    - git+https://github.com/slaclab/edef
     - matlab-wrapper
-    - git+git://github.com/slaclab/meme
-    - git+git://github.com/slaclab/pyca
+    - git+https://github.com/slaclab/meme
+    - git+https://github.com/slaclab/pyca
     - ipaddress
     - Cheetah3
     - opencv-contrib-python==4.2.0.34
