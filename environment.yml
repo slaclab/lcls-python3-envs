@@ -5,6 +5,7 @@ channels:
 dependencies:
   - bmad
   - bayesian-optimization
+  - black
   - blosc
   - bokeh
   - botorch
@@ -12,8 +13,10 @@ dependencies:
   - cx_oracle
   - dateparser
   - deap
+  - dm-tree
   - epics-base
   - epicscorelibs
+  - gpflow
   - gpy
   - gym
   - h5py
@@ -24,6 +27,7 @@ dependencies:
   - jinja2
   - jupyter
   - jupyterlab
+  - kafka-python
   - keras
   - lume-impact
   - matplotlib
@@ -57,6 +61,7 @@ dependencies:
   - sqlite
   - pytables
   - tensorflow
+  - tensorflow-probability
   - theano
   - treelib
   - pip:
