@@ -73,6 +73,8 @@ dependencies:
     - matlab-wrapper
     - git+https://github.com/slaclab/meme
     - git+https://github.com/slaclab/pyca
+    - git+https://github.com/slaclab/lcls-live
+    - git+https://github.com/slaclab/lcls-tools
     - ipaddress
     - Cheetah3
     - opencv-contrib-python==4.2.0.34
