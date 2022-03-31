@@ -76,7 +76,7 @@ dependencies:
     - git+https://github.com/slaclab/lcls-tools
     - ipaddress
     - Cheetah3
-    - p4p
+    - p4p  # This is on conda-forge, but not updated. pypi has the latest versions
     - softioc
     - opencv-contrib-python==4.2.0.34
 #
