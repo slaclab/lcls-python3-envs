@@ -38,6 +38,7 @@ dependencies:
   - numpy
   - openmpi
   - openpmd-beamphysics
+  - p4p
   - pandas
   - pip
   - pint
@@ -64,6 +65,7 @@ dependencies:
   - theano
   - treelib
   - pip:
+    - softioc
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/slacepics
@@ -76,8 +78,6 @@ dependencies:
     - git+https://github.com/slaclab/lcls-tools
     - ipaddress
     - Cheetah3
-    - p4p  # This is on conda-forge, but not updated. pypi has the latest versions
-    - softioc
     - opencv-contrib-python==4.2.0.34
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
