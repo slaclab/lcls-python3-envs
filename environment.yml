@@ -65,7 +65,6 @@ dependencies:
   - theano
   - treelib
   - pip:
-    - softioc
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/slacepics
