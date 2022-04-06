@@ -64,6 +64,7 @@ dependencies:
   - tensorflow-probability
   - theano
   - treelib
+  - xopt
   - pip:
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/slaclab/edlgenerator
