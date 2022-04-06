@@ -11,6 +11,7 @@ dependencies:
   - botorch
   - cothread
   - cx_oracle
+  - dask
   - dateparser
   - deap
   - dm-tree
@@ -31,8 +32,13 @@ dependencies:
   - keras
   - lume-impact
   - matplotlib
+  - mkdocs
+  - mkdocstrings
+  - mkdocs-material
+  - mkdocs-jupyter
   - mock
   - mpi
+  - mpi4py
   - notebook
   - numexpr
   - numpy
@@ -42,6 +48,7 @@ dependencies:
   - pandas
   - pip
   - pint
+  - pydantic
   - pydm
   - pyepics
   - pyqt
