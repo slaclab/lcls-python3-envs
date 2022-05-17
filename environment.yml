@@ -83,6 +83,8 @@ dependencies:
     - git+https://github.com/slaclab/pyca
     - git+https://github.com/slaclab/lcls-live
     - git+https://github.com/slaclab/lcls-tools
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
     - ipaddress
     - Cheetah3
     - opencv-contrib-python==4.2.0.34
