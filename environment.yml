@@ -39,6 +39,7 @@ dependencies:
   - mock
   - mpi
   - mpi4py
+  - multiset
   - notebook
   - numexpr
   - numpy
