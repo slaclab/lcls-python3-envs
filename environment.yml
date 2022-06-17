@@ -9,6 +9,7 @@ dependencies:
   - blosc
   - bokeh
   - botorch
+  - caproto
   - cothread
   - cx_oracle
   - dask
