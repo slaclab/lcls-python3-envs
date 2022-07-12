@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - alembic
   - bmad
   - bayesian-optimization
   - black
@@ -20,6 +21,7 @@ dependencies:
   - epicscorelibs
   - gpflow
   - gpy
+  - greenlet
   - gym
   - h5py
   - hdf5
@@ -64,10 +66,12 @@ dependencies:
   - qtpy
   - requests
   - scikit-learn
+  - scikit-image
   - scipy
   - seaborn
   - six
   - sqlite
+  - sqlalchemy
   - pytables
   - tensorflow
   - tensorflow-probability
