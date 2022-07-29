@@ -93,7 +93,6 @@ dependencies:
     - ipaddress
     - Cheetah3
     - plex
-    - opencv-contrib-python==4.2.0.34
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
