@@ -65,6 +65,7 @@ dependencies:
   - qtpy
   - requests
   - scikit-learn
+  - scikit-image
   - scipy
   - seaborn
   - six
