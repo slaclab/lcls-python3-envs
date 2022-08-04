@@ -1,7 +1,6 @@
 name: python3.8env
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - alembic
   - bmad
@@ -48,7 +47,7 @@ dependencies:
   - numpy
   - openmpi
   - openpmd-beamphysics
-  - p4p
+  - p4p>=3.5.5
   - pandas
   - pip
   - pint

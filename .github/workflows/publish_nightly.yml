@@ -13,7 +13,7 @@ jobs:
     name: Build environment
     steps:
       - name: Build environment
-        uses: slaclab/lcls-rhel6-conda-pack@v1.1
+        uses: jbellister-slac/lcls-rhel6-conda-pack@5d7435f58aef7d93fa56256b30711d38ef96bbfc
       - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
