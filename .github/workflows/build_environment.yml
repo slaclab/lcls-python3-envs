@@ -14,4 +14,4 @@ jobs:
     name: Build environment
     steps:
       - name: Build environment
-        uses: jbellister-slac/lcls-rhel6-conda-pack@5d7435f58aef7d93fa56256b30711d38ef96bbfc
+        uses: jbellister-slac/lcls-rhel6-conda-pack@e0c38e0d501ca34c5e33500e779ff28d13dd0d00
