@@ -47,7 +47,6 @@ dependencies:
   - numpy
   - openmpi
   - openpmd-beamphysics
-  - p4p>=3.5.5
   - pandas
   - pip
   - pint
@@ -92,7 +91,7 @@ dependencies:
     - git+https://github.com/slaclab/mps_history
     - ipaddress
     - Cheetah3
-    - plex
+    - p4p
     - opencv-contrib-python==4.2.0.34
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
