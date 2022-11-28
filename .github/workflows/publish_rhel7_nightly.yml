@@ -2,7 +2,7 @@ name: Publish RHEL7 compatible nightly release
 
 on:
   schedule:
-    - cron: '35 22 * * *'
+    - cron: '15 23 * * *'
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
     name: Build environment
     steps:
       - name: Build environment
-        uses: jbellister-slac/lcls-rhel6-conda-pack@6b0b0a01c4c67cc0275ea7bedf9e9d51ae54c9c1
+        uses: jbellister-slac/lcls-rhel7-conda-pack@254a2380f011ff7b06a2fea3926fd78155445be4
       - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
