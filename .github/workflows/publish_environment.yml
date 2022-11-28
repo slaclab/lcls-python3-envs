@@ -9,12 +9,13 @@ jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3.8env
+      ENVIRONMENT_FILE_PATH: environment.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment
     steps:
       - name: Build environment
-        uses: jbellister-slac/lcls-rhel6-conda-pack@e0c38e0d501ca34c5e33500e779ff28d13dd0d00
+        uses: jbellister-slac/lcls-rhel6-conda-pack@6b0b0a01c4c67cc0275ea7bedf9e9d51ae54c9c1
       - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
