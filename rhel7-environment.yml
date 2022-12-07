@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - alembic
-  - bmad>=20221123.0
+  - bmad
   - bayesian-optimization
   - black
   - blosc
