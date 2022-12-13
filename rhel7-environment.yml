@@ -51,9 +51,9 @@ dependencies:
   - pip
   - pint
   - pydantic
-  - pydm>=1.18.1
+  - pydm
   - pyepics
-  - pyqt=5.12.3
+  - pyqt
   - pyqtgraph
   - pytao
   - pytest
