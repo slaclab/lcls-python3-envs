@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3.9env
-      ENVIRONMENT_FILE_PATH: rhel7-environment.yml
+      ENVIRONMENT_FILE_PATH: nightly-rhel7-environment.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment

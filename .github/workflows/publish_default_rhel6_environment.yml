@@ -1,14 +1,15 @@
-name: Publish nightly release
+name: Publish release
 
-on:
-  schedule:
-    - cron: '0 5 * * *'
-
+on:  
+  push:
+    tags:
+      - '*'
+      
 jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3.8env
-      ENVIRONMENT_FILE_PATH: nightly-environment.yml
+      ENVIRONMENT_FILE_PATH: default-rhel6-environment.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment
@@ -20,6 +21,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ env.ENVIRONMENT_NAME }}.tar.gz
-          tag: nightly
+          tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
