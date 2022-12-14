@@ -50,7 +50,6 @@ dependencies:
   - openmpi
   - openpmd-beamphysics
   - pandas
-  - pcaspy
   - pip
   - pint
   - pydantic
