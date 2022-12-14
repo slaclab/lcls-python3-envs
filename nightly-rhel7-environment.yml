@@ -32,7 +32,9 @@ dependencies:
   - jupyterlab
   - kafka-python
   - keras
+  - lume-epics
   - lume-impact
+  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
@@ -48,6 +50,7 @@ dependencies:
   - openmpi
   - openpmd-beamphysics
   - pandas
+  - pcaspy
   - pip
   - pint
   - pydantic
