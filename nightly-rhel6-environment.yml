@@ -29,10 +29,12 @@ dependencies:
   - ipywidgets
   - jinja2
   - jupyter
-  - jupyterlab
+  - jupyterlab=3.4.3
   - kafka-python
   - keras
+  - lume-epics
   - lume-impact
+  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
@@ -48,6 +50,7 @@ dependencies:
   - openmpi
   - openpmd-beamphysics
   - pandas
+  - pcaspy
   - pip
   - pint
   - pydantic
