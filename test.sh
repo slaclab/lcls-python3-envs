@@ -19,6 +19,7 @@ import epics
 import numpy
 import theano
 import pasta
+import p4p
 import sklearn
 import pytao
 import treelib
