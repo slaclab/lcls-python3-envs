@@ -32,7 +32,9 @@ dependencies:
   - jupyterlab=3.4.3
   - kafka-python
   - keras
+  - lume-epics
   - lume-impact
+  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
