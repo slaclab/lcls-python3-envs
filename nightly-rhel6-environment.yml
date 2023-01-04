@@ -32,7 +32,9 @@ dependencies:
   - jupyterlab=3.4.3
   - kafka-python
   - keras
+  - lume-epics
   - lume-impact
+  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
@@ -47,6 +49,7 @@ dependencies:
   - numpy=1.23.5
   - openmpi
   - openpmd-beamphysics
+  - p4p=3.5.5
   - pandas
   - pcaspy
   - pip
@@ -92,7 +95,6 @@ dependencies:
     - git+https://github.com/slaclab/mps_history
     - ipaddress
     - Cheetah3
-    - p4p
     - opencv-contrib-python==4.2.0.34
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
