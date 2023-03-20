@@ -85,7 +85,6 @@ dependencies:
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
     - git+https://github.com/slaclab/edef
-    - matlabengine==9.13.7
     - matlab-wrapper
     - git+https://github.com/slaclab/meme
     - git+https://github.com/slaclab/pyca
