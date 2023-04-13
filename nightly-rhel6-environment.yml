@@ -55,7 +55,7 @@ dependencies:
   - pip
   - pint
   - pydantic
-  - pydm
+  - pydm=1.19.0
   - pyepics
   - pyqt
   - pyqtgraph
