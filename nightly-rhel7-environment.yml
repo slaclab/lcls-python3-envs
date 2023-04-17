@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - alembic
+  - badger-opt
   - bmad
   - bayesian-optimization
   - black
