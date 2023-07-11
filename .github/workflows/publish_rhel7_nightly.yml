@@ -2,7 +2,7 @@ name: Publish RHEL7 compatible nightly release
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 12 * * *'
 
 jobs:
   build:
