@@ -25,6 +25,7 @@ dependencies:
   - gym
   - h5py
   - hdf5
+  - holoviews
   - impact-t
   - ipython
   - ipywidgets
@@ -51,6 +52,7 @@ dependencies:
   - openmpi
   - openpmd-beamphysics
   - pandas
+  - panel
   - pcaspy
   - pip
   - pint
