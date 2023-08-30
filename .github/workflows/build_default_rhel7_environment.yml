@@ -1,0 +1,18 @@
+name: Create conda environment with docker python3.9env
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    env:
+      ENVIRONMENT_NAME: python3.9env
+      ENVIRONMENT_FILE_PATH: default-rhel7-environment.yml
+      TEST_FILE: test.sh
+    runs-on: ubuntu-latest
+    name: Build environment
+    steps:
+      - name: Build environment
+        uses: jbellister-slac/lcls-rhel7-conda-pack@b5283552ae868de41e9c5753386353e4301ad711
