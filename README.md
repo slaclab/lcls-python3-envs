@@ -10,13 +10,9 @@ This is the environment that will be available to anyone logging into a RHEL7 bo
 
 This is the old default environment, only for use on any remaining machines still running RHEL6.
 
-## nightly-rhel6-environment
-
-This environment will also run on RHEL6 machines, but is rebuilt with the latest (compatible) version of each package nightly via a [GitHub cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.github/workflows/publish_rhel6_nightly.yml). As such, it is intended mainly for development and testing, and is not suitable for a production applicaiton needing a stable environment.
-
 ## nightly-rhel7-environment
 
-Similar profile to the other nightly environment, except built against RHEL7 to get more recent versions of packages that are not supported by RHEL 6. Updated via [cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.github/workflows/publish_rhel7_nightly.yml)  as well.
+Updated via [cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.github/workflows/publish_rhel7_nightly.yml) to obtain more recent versions of packages.
 
 ## Documentation
 
