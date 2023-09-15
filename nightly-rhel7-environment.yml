@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - alembic
-  - badger-opt
   - bmad
   - bayesian-optimization
   - black
@@ -96,6 +95,7 @@ dependencies:
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/ChristopherMayes/Xopt
     - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/Badger.git
     - ipaddress
     - Cheetah3
     - p4p
