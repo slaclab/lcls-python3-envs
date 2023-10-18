@@ -28,6 +28,7 @@ dependencies:
   - impact-t
   - ipython
   - ipywidgets
+  - jax>=0.4.16
   - jinja2
   - jupyter
   - jupyterlab
