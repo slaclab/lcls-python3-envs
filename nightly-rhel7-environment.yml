@@ -28,7 +28,6 @@ dependencies:
   - impact-t
   - ipython
   - ipywidgets
-  - jax>=0.4.16
   - jinja2
   - jupyter
   - jupyterlab
@@ -102,6 +101,8 @@ dependencies:
     - Cheetah3
     - p4p
     - opencv-contrib-python
+    - jax>=0.4.16
+    - jaxlib>=0.4.16
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
