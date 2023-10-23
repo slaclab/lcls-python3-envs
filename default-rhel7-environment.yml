@@ -98,6 +98,8 @@ dependencies:
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/ChristopherMayes/Xopt
     - git+https://github.com/dylanmkennedy/emitopt
+    - jax>=0.4.16
+    - jaxlib>=0.4.16
     - ipaddress
     - Cheetah3
     - p4p
