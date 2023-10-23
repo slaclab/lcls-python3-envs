@@ -56,7 +56,7 @@ dependencies:
   - pcaspy
   - pip
   - pint
-  - pydantic
+  - pydantic>=2.3
   - pydm
   - pyepics
   - pyqt
