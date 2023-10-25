@@ -97,6 +97,7 @@ dependencies:
     - git+https://github.com/ChristopherMayes/Xopt
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/slaclab/Badger.git
+    - git+https://github.com/slaclab/PyEmittance
     - ipaddress
     - Cheetah3
     - p4p
