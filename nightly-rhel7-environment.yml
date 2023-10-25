@@ -35,7 +35,6 @@ dependencies:
   - keras
   - lume-epics
   - lume-impact
-  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
@@ -82,28 +81,29 @@ dependencies:
   - theano
   - treelib
   - pip:
-    - git+https://github.com/slaclab/edmbutton
-    - git+https://github.com/slaclab/edlgenerator
-    - git+https://github.com/slaclab/slacepics
-    - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/slaclab/edef
-    - matlab-wrapper
-    - git+https://github.com/slaclab/meme
-    - git+https://github.com/slaclab/pyca
-    - git+https://github.com/slaclab/lcls-live
-    - git+https://github.com/slaclab/lcls-tools
-    - git+https://github.com/slaclab/mps_database
-    - git+https://github.com/slaclab/mps_history
-    - git+https://github.com/ChristopherMayes/Xopt
-    - git+https://github.com/dylanmkennedy/emitopt
-    - git+https://github.com/slaclab/Badger.git
-    - git+https://github.com/slaclab/PyEmittance
-    - ipaddress
     - Cheetah3
-    - p4p
-    - opencv-contrib-python
+    - ipaddress
     - jax>=0.4.16
     - jaxlib>=0.4.16
+    - matlab-wrapper
+    - opencv-contrib-python
+    - p4p
+    - git+https://github.com/slaclab/Badger
+    - git+https://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edlgenerator
+    - git+https://github.com/slaclab/edmbutton
+    - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/lcls-live
+    - git+https://github.com/slaclab/lcls-tools
+    - git+https://github.com/slaclab/lume-model
+    - git+https://github.com/slaclab/meme
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
+    - git+https://github.com/slaclab/pyca
+    - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
+    - git+https://github.com/ChristopherMayes/Xopt
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
