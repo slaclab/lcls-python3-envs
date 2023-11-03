@@ -1,15 +1,15 @@
-name: Publish RHEL7 compatible nightly release
+name: Publish release
 
-on:
-  schedule:
-    - cron: '0 1 * * *'
-  workflow_dispatch:
-
+on:  
+  push:
+    tags:
+      - '*'
+      
 jobs:
   build:
     env:
-      ENVIRONMENT_NAME: rhel7_devel
-      ENVIRONMENT_FILE_PATH: rhel7_devel.yml
+      ENVIRONMENT_NAME: python3_rhel7_env
+      ENVIRONMENT_FILE_PATH: python3_rhel7_env.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment
@@ -21,6 +21,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ env.ENVIRONMENT_NAME }}.tar.gz
-          tag: rhel7-nightly
+          tag: ${{ github.ref }}
           overwrite: true
           file_glob: true

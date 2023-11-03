@@ -1,4 +1,4 @@
-name: Create conda environment with docker python3.9env
+name: Create RHEL7 compatible conda environment with docker
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     env:
-      ENVIRONMENT_NAME: python3.9env
+      ENVIRONMENT_NAME: python3_rhel7_env
       ENVIRONMENT_FILE_PATH: default-rhel7-environment.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest

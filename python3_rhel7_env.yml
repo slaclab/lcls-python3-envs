@@ -1,4 +1,4 @@
-name: python3.9env
+name: python3_rhel7_env
 channels:
   - conda-forge
 dependencies:
@@ -86,8 +86,8 @@ dependencies:
   - pip:
     - Cheetah3
     - ipaddress
-    - jax>=0.4.16
-    - jaxlib>=0.4.16
+    - jax==0.4.16
+    - jaxlib==0.4.16
     - matlab-wrapper
     - opencv-contrib-python
     - p4p  

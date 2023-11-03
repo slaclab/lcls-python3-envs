@@ -1,4 +1,4 @@
-name: python3.9env
+name: rhel7_devel
 channels:
   - conda-forge
 dependencies:
