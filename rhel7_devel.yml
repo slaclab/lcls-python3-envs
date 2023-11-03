@@ -83,8 +83,6 @@ dependencies:
   - pip:
     - Cheetah3
     - ipaddress
-    - jax>=0.4.16
-    - jaxlib>=0.4.16
     - matlab-wrapper
     - opencv-contrib-python
     - p4p
