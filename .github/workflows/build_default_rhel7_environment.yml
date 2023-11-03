@@ -9,7 +9,7 @@ jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3_rhel7_env
-      ENVIRONMENT_FILE_PATH: default-rhel7-environment.yml
+      ENVIRONMENT_FILE_PATH: python3_rhel7_env.yml
       TEST_FILE: test.sh
     runs-on: ubuntu-latest
     name: Build environment
