@@ -3,7 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - alembic
-  - badger-opt
   - bmad
   - bayesian-optimization
   - black
@@ -83,27 +82,29 @@ dependencies:
   - tensorflow-probability
   - theano
   - treelib
+  - xopt
   - pip:
-    - git+https://github.com/slaclab/edmbutton
-    - git+https://github.com/slaclab/edlgenerator
-    - git+https://github.com/slaclab/slacepics
-    - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/slaclab/edef
-    - matlab-wrapper
-    - git+https://github.com/slaclab/meme
-    - git+https://github.com/slaclab/pyca
-    - git+https://github.com/slaclab/lcls-live
-    - git+https://github.com/slaclab/lcls-tools
-    - git+https://github.com/slaclab/mps_database
-    - git+https://github.com/slaclab/mps_history
-    - git+https://github.com/ChristopherMayes/Xopt
-    - git+https://github.com/dylanmkennedy/emitopt
+    - Cheetah3
+    - ipaddress
     - jax>=0.4.16
     - jaxlib>=0.4.16
-    - ipaddress
-    - Cheetah3
-    - p4p
+    - matlab-wrapper
     - opencv-contrib-python
+    - p4p  
+    - git+https://github.com/slaclab/Badger
+    - git+https://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edlgenerator
+    - git+https://github.com/slaclab/edmbutton
+    - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/lcls-live
+    - git+https://github.com/slaclab/lcls-tools
+    - git+https://github.com/slaclab/meme
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
+    - git+https://github.com/slaclab/pyca
+    - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
