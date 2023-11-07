@@ -88,7 +88,8 @@ dependencies:
     - ipaddress
     - matlab-wrapper
     - opencv-contrib-python
-    - p4p  
+    - p4p
+    - slac-alarm-manager
     - git+https://github.com/slaclab/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
