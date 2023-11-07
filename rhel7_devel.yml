@@ -62,6 +62,7 @@ dependencies:
   - pyqtwebengine
   - pytao
   - pytest
+  - pytest-qt
   - python=3.9
   - pytorch
   - pytz
@@ -86,6 +87,7 @@ dependencies:
     - matlab-wrapper
     - opencv-contrib-python
     - p4p
+    - slac-alarm-manager
     - git+https://github.com/slaclab/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
