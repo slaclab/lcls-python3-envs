@@ -65,6 +65,7 @@ dependencies:
   - pytest
   - pytest-qt
   - python=3.9
+  - python-confluent-kafka
   - pytorch
   - pytz
   - pyzmq
