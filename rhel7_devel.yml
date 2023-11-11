@@ -46,7 +46,7 @@ dependencies:
   - multiset
   - notebook
   - numexpr
-  - numpy=1.23.5
+  - numpy
   - openmpi
   - openpmd-beamphysics
   - pandas
