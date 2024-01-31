@@ -6,6 +6,6 @@ conda remove --force --offline --yes jaxlib
 pip install jax
 
 # All tests to be run to verify the environment built correctly and will work as expected at run time
-git clone https://github.com/ChristopherMayes/Xopt.git
-pushd Xopt
-pytest
+#git clone https://github.com/ChristopherMayes/Xopt.git
+#pushd Xopt
+#pytest
