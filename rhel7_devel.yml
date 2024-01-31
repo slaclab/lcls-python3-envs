@@ -81,7 +81,6 @@ dependencies:
   - tensorflow-probability
   - theano
   - treelib
-  - xopt
   - pip:
     - Cheetah3
     - ipaddress
@@ -104,7 +103,7 @@ dependencies:
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-#    - git+https://github.com/ChristopherMayes/Xopt
+    - git+https://github.com/ChristopherMayes/Xopt
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
