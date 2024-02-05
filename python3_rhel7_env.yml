@@ -63,6 +63,7 @@ dependencies:
   - pyqtwebengine
   - pytao
   - pytest
+  - pytest-benchmark
   - pytest-qt
   - python=3.9
   - python-confluent-kafka
