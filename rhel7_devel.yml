@@ -18,6 +18,9 @@ dependencies:
   - dm-tree
   - epics-base
   - epicscorelibs
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
   - gpflow
   - gpy
   - greenlet
@@ -57,6 +60,7 @@ dependencies:
   - pydantic>2.3
   - pydm
   - pyepics
+  - pynput
   - pyqt
   - pyqtgraph
   - pyqtwebengine
