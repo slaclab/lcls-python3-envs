@@ -57,6 +57,7 @@ dependencies:
   - pcaspy
   - pip
   - pint
+  - pyarrow>=10.0.1
   - pydantic>2.3
   - pydm
   - pyepics
