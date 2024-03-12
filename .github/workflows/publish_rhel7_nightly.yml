@@ -14,6 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Build environment
     steps:
+      - name: Free disk space
+        run: |
+          sudo swapoff -a
+          sudo rm -f /swapfile
+          sudo apt clean
+          docker rmi $(docker image ls -aq)
+          df -h      
       - name: Build environment
         uses: slaclab/lcls-rhel7-conda-pack@v1.1
       - name: Upload artifact to release
