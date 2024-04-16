@@ -27,7 +27,7 @@ jobs:
       # So we split the final output up here, and can reassemble when downloading it elsewhere
       - name: Split output artifact to stay under 2GB upload per file limit
         run: |
-          split -b 1.5G -d ${{ env.ENVIRONMENT_NAME }}.tar.gz ${{ env.ENVIRONMENT_NAME }}.tar.gz.
+          split -b 1500M -d ${{ env.ENVIRONMENT_NAME }}.tar.gz ${{ env.ENVIRONMENT_NAME }}.tar.gz.
       - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
