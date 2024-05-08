@@ -24,6 +24,7 @@ dependencies:
   - gym
   - h5py
   - hdf5
+  - imageio
   - impact-t
   - ipython
   - ipywidgets
@@ -61,6 +62,7 @@ dependencies:
   - pytao
   - pytest
   - python=3.8
+  - python-mss
   - pytorch
   - pytz
   - pyzmq
