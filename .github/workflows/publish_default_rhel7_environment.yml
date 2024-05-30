@@ -23,11 +23,16 @@ jobs:
           df -h
       - name: Build environment
         uses: slaclab/lcls-rhel7-conda-pack@v1.1
+      # Artifact uploads to a published release on GitHub must remain under 2GB or the job will fail
+      # So we split the final output up here, and can reassemble when downloading it elsewhere
+      - name: Split output artifact to stay under 2GB upload per file limit
+        run: |
+          split -b 1500M -d ${{ env.ENVIRONMENT_NAME }}.tar.gz ${{ env.ENVIRONMENT_NAME }}.tar.gz.
       - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ${{ env.ENVIRONMENT_NAME }}.tar.gz
-          tag: ${{ github.ref }}
+          file: ${{ env.ENVIRONMENT_NAME }}.tar.gz.*
+          tag: rhel7-nightly
           overwrite: true
           file_glob: true
