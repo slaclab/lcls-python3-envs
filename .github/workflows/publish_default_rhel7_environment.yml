@@ -33,6 +33,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ env.ENVIRONMENT_NAME }}.tar.gz.*
-          tag: rhel7-nightly
+          tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
