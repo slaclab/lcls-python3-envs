@@ -74,6 +74,7 @@ dependencies:
   - python=3.10
   - python-confluent-kafka
   - python-mss
+  - python-vxi11
   - pytorch
   - pytz
   - pyzmq
