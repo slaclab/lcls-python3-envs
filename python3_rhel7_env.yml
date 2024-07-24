@@ -54,6 +54,7 @@ dependencies:
   - numpy
   - openmpi
   - openpmd-beamphysics
+  - openpyxl
   - pandas
   - panel
   - pcaspy
