@@ -38,7 +38,7 @@ dependencies:
   - keras
   - lume-epics
   - lume-impact
-  - matplotlib
+  - matplotlib<3.9
   - mkdocs
   - mkdocstrings
   - mkdocs-material
