@@ -40,7 +40,7 @@ dependencies:
   - lume-epics
   - lume-impact
   - lume-model
-  - matplotlib
+  - matplotlib<3.9
   - mkdocs
   - mkdocstrings
   - mkdocs-material
