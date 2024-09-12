@@ -18,6 +18,7 @@ dependencies:
   - dm-tree
   - epics-base
   - epicscorelibs
+  - flake8
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
