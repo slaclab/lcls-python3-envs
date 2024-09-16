@@ -70,6 +70,7 @@ dependencies:
   - pytao
   - pytest
   - pytest-benchmark
+  - pytest-cov
   - pytest-qt
   - python=3.10
   - python-vxi11
