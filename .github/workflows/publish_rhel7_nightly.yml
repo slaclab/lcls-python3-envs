@@ -11,7 +11,7 @@ jobs:
       ENVIRONMENT_NAME: rhel7_devel
       ENVIRONMENT_FILE_PATH: rhel7_devel.yml
       TEST_FILE: test.sh
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Build environment
     steps:
       - name: Free disk space
