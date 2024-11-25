@@ -38,6 +38,7 @@ dependencies:
   - jupyterlab
   - kafka-python
   - keras
+  - libpython-static
   - lume-epics
   - lume-impact
   - lume-model
