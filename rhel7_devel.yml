@@ -28,6 +28,7 @@ dependencies:
   - h5py
   - hdf5
   - holoviews
+  - img2pdf
   - impact-t
   - ipython
   - ipywidgets
