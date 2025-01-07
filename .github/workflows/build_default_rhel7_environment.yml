@@ -11,7 +11,7 @@ jobs:
       ENVIRONMENT_NAME: python3_rhel7_env
       ENVIRONMENT_FILE_PATH: python3_rhel7_env.yml
       TEST_FILE: test.sh
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Build environment
     steps:
       - name: Free disk space
