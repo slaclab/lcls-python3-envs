@@ -8,7 +8,7 @@ dependencies:
   - black
   - blosc
   - bokeh
-  - botorch=0.10.0  # pinned until xopt supports botorch >= 0.11.0
+  - botorch
   - caproto
   - cothread
   - cx_oracle
