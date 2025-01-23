@@ -95,6 +95,7 @@ dependencies:
   - theano
   - treelib
   - pip:
+    - cheetah-accelerator
     - Cheetah3
     - ipaddress
     - matlab-wrapper
