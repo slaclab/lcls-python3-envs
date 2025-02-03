@@ -1,0 +1,55 @@
+name: Publish the nightly release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    env:
+      ENVIRONMENT_NAME: python3_devel
+      ENVIRONMENT_FILE_PATH: python3_devel.yml
+      TEST_FILE: scripts/test.sh
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux:9
+    name: Build environment
+    steps:
+      - name: Install System Dependencies
+        run: |
+          dnf install -y git bzip2 unzip xz
+          dnf clean all
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          python-version: "3.10"
+          environment-file: python3_devel.yml
+          miniforge-variant: Miniforge3
+          miniforge-version: latest
+          activate-environment: python3_devel
+          conda-remove-defaults: true
+      - name: Run pre-pack environment steps
+        shell: bash -el {0}
+        run: bash scripts/pre-pack.sh
+      - name: Test environment
+        shell: bash -el {0}
+        run: bash scripts/test.sh
+      - name: Pack environment
+        shell: bash -el {0}
+        run: |
+          conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $ENVIRONMENT_NAME.tar.gz
+      # Artifact uploads to a published release on GitHub must remain under 2GB or the job will fail
+      # So we split the final output up here, and can reassemble when downloading it elsewhere
+      - name: Split output artifact to stay under 2GB upload per file limit
+        shell: bash -el {0}
+        run: |
+          split -b 1500M -d ${{ env.ENVIRONMENT_NAME }}.tar.gz ${{ env.ENVIRONMENT_NAME }}.tar.gz.
+      - name: Upload artifact to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ env.ENVIRONMENT_NAME }}.tar.gz.*
+          tag: python3-devel
+          overwrite: true
+          file_glob: true
