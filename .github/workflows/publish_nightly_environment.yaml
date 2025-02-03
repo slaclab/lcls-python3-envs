@@ -7,8 +7,6 @@ jobs:
   build:
     env:
       ENVIRONMENT_NAME: python3_devel
-      ENVIRONMENT_FILE_PATH: python3_devel.yml
-      TEST_FILE: scripts/test.sh
     runs-on: ubuntu-latest
     container:
       image: rockylinux:9
@@ -34,7 +32,7 @@ jobs:
         run: bash scripts/pre-pack.sh
       - name: Test environment
         shell: bash -el {0}
-        run: bash scripts/test.sh
+        run: bash scripts/run-tests.sh
       - name: Pack environment
         shell: bash -el {0}
         run: |
