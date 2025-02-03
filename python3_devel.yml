@@ -1,4 +1,4 @@
-name: rhel7_devel
+name: python3_devel
 channels:
   - conda-forge
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   - bokeh
   - botorch
   - caproto
+  - conda-pack
   - cothread
   - cx_oracle
   - dask
@@ -123,6 +124,7 @@ dependencies:
 # lcls-parameters
 # logicgate
 # matlog
+# meme
 # model
 # physicselog
 # wmctrl

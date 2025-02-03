@@ -14,6 +14,10 @@ Updated via [cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.
 
 This is the old default environment, only for use on any remaining machines still running RHEL6.
 
+## python3_devel
+
+This will be the new version of the nightly environment, built for machines running Rocky 9 (and eventually above). Not yet in use. rhel7_devel is still the go to for all machines for now.
+
 ## Documentation
 
 For additional documentation including the GitHub actions that support the build and testing process please see here: https://slaclab.github.io/conda-pack-docs/
