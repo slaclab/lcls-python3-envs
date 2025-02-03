@@ -102,7 +102,7 @@ dependencies:
     - opencv-contrib-python
     - p4p
     - slac-alarm-manager
-    - git+https://github.com/slaclab/Badger
+    - git+https://github.com/xopt-org/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
@@ -115,7 +115,7 @@ dependencies:
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/ChristopherMayes/Xopt
+    - git+https://github.com/xopt-org/Xopt
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
