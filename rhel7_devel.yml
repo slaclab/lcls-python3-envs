@@ -8,7 +8,7 @@ dependencies:
   - black
   - blosc
   - bokeh
-  - botorch
+  - botorch=0.12.0
   - caproto
   - cothread
   - cx_oracle
