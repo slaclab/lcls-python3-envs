@@ -110,6 +110,7 @@ dependencies:
     - git+https://github.com/slaclab/lcls-live
     - git+https://github.com/slaclab/lcls-tools
     - git+https://github.com/slaclab/lume-model
+    - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
