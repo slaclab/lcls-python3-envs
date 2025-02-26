@@ -4,7 +4,6 @@ channels:
 dependencies:
   - alembic
   - bmad
-  - bayesian-optimization
   - black
   - blosc
   - bokeh
@@ -22,7 +21,6 @@ dependencies:
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
-  - gpflow
   - gpy
   - greenlet
   - gym
@@ -37,7 +35,6 @@ dependencies:
   - jupyter
   - jupyterlab
   - kafka-python
-  - keras
   - lume-epics
   - lume-impact
   - matplotlib<3.9
@@ -91,14 +88,14 @@ dependencies:
   - sqlite
   - sqlalchemy
   - pytables
-  - tensorflow
-  - tensorflow-probability
+  - tensorboard
   - theano
   - treelib
   - pip:
     - cheetah-accelerator
     - Cheetah3
     - ipaddress
+    - lightning
     - matlab-wrapper
     - opencv-contrib-python
     - p4p
