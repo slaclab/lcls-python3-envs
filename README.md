@@ -10,6 +10,10 @@ This is the default environment that will be available to anyone logging into a 
 
 Updated via [cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.github/workflows/publish_rhel7_nightly.yml) to obtain more recent versions of packages.
 
+## rocky9_gpu_devel
+
+An environment with the GPU version of PyTorch for running on CUDA capable rocky 9 systems.
+
 ## default-rhel6-environment
 
 This is the old default environment, only for use on any remaining machines still running RHEL6.
