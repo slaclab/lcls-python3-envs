@@ -92,7 +92,6 @@ dependencies:
   - theano
   - treelib
   - pip:
-    - cheetah-accelerator
     - Cheetah3
     - ipaddress
     - matlab-wrapper
@@ -100,6 +99,7 @@ dependencies:
     - p4p
     - slac-alarm-manager
     - git+https://github.com/xopt-org/Badger
+    - git+https://github.com/desy-ml/cheetah
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
