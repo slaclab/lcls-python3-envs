@@ -1,4 +1,4 @@
-name: rocky9_devel_gpu
+name: rocky9_gpu_devel
 channels:
   - conda-forge
 dependencies:
