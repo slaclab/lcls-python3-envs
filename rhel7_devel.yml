@@ -106,7 +106,7 @@ dependencies:
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/slaclab/lcls-live
-    #- git+https://github.com/slaclab/lcls-tools
+    - git+https://github.com/slaclab/lcls-tools.git
     - git+https://github.com/slaclab/lume-model
     - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/slaclab/mps_database
