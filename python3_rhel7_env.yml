@@ -117,7 +117,7 @@ dependencies:
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/Ryan-McClanahan/ScPatternSelect
+    - git+https://github.com/slaclab/ScPatternSelect
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
