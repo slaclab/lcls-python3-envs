@@ -17,12 +17,12 @@ dependencies:
   - dm-tree
   - epics-base
   - epicscorelibs
-#  - google-api-python-client
-#  - google-auth-httplib2
-#  - google-auth-oauthlib
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
   - gpy
   - greenlet
-#  - gym
+  - gym
   - h5py
   - hdf5
   - holoviews
@@ -33,7 +33,7 @@ dependencies:
   - jinja2
   - jupyter
   - jupyterlab
-#  - kafka-python
+  - kafka-python
   - keras
   - lightning
   - lume-epics
@@ -59,9 +59,9 @@ dependencies:
   - pcaspy
   - pip
   - pint
-#  - prefect=2.14.2
+  - prefect=2.14.2
   - pyarrow>=10.0.1
-#  - pyca
+  - pyca
   - pydantic>2.3
   - pydm
   - pyepics
@@ -96,11 +96,11 @@ dependencies:
   - pip:
     - cheetah-accelerator
     - Cheetah3
-#    - ipaddress
+    - ipaddress
     - matlab-wrapper
- #   - opencv-contrib-python
+    - opencv-contrib-python
     - p4p
- #   - slac-alarm-manager
+    - slac-alarm-manager
     - git+https://github.com/xopt-org/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
@@ -110,8 +110,8 @@ dependencies:
     - git+https://github.com/slaclab/lcls-tools.git
     - git+https://github.com/slaclab/lume-model
     - git+https://github.com/slaclab/ml-tto
-#    - git+https://github.com/slaclab/mps_database
-#    - git+https://github.com/slaclab/mps_history
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
