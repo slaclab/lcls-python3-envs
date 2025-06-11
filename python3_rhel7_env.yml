@@ -97,6 +97,7 @@ dependencies:
   - tensorflow-probability
   - theano
   - treelib
+  - urllib3
   - xopt
   - pip:
     - Cheetah3

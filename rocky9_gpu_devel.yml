@@ -91,6 +91,7 @@ dependencies:
   - tensorboard
   - theano
   - treelib
+  - urllib3
   - pip:
     - Cheetah3
     - ipaddress
