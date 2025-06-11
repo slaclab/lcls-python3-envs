@@ -42,6 +42,7 @@ dependencies:
   - mkdocstrings
   - mkdocs-material
   - mkdocs-jupyter
+  - mlflow>=2.22.0
   - mock
   - mpi
   - mpi4py
