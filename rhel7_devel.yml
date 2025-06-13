@@ -94,7 +94,6 @@ dependencies:
   - theano
   - treelib
   - urllib3
-  - xopt
   - pip:
     - cheetah-accelerator
     - Cheetah3
@@ -117,7 +116,7 @@ dependencies:
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-#    - git+https://github.com/xopt-org/Xopt
+    - git+https://github.com/xopt-org/Xopt
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
 # epics-batch-get
