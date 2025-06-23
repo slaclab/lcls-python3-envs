@@ -41,7 +41,7 @@ dependencies:
   - pip:
     - cheetah-accelerator[openpmd]==0.7.3
     - Cheetah3
-    - gymnasium[other]
+    - gymnasium[other]==1.1.1
     - opencv-contrib-python
     - rl_zoo3
     - git+https://github.com/xopt-org/Badger
