@@ -27,7 +27,7 @@ dependencies:
   - pytest-benchmark
   - pytest-cov
   - pytest-qt
-  - python=3.13.5
+  - python=3.12
   - pytorch
   - requests
   - scienceplots
