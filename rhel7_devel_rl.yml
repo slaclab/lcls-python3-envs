@@ -1,0 +1,136 @@
+name: rhel7_devel
+channels:
+  - conda-forge
+dependencies:
+  - alembic
+  - bmad
+  - black
+  - blosc
+  - bokeh
+  - botorch=0.12.0
+  - caproto
+  - cothread
+  - cx_oracle
+  - dask
+  - dateparser
+  - deap
+  - dm-tree
+  - epics-base
+  - epicscorelibs
+  - flake8
+  - google-api-python-client
+  - google-auth-httplib2
+  - google-auth-oauthlib
+  - gpy
+  - greenlet
+  - h5py
+  - hdf5
+  - holoviews
+  - icecream
+  - img2pdf
+  - impact-t
+  - ipython
+  - ipywidgets
+  - isort
+  - jinja2
+  - jupyter
+  - jupyterlab
+  - kafka-python
+  - keras
+  - lightning
+  - lume-epics
+  - lume-impact
+  - matplotlib
+  - mkdocs
+  - mkdocstrings
+  - mkdocs-material
+  - mkdocs-jupyter
+  - mlflow>=2.22.0
+  - mock
+  - mpi
+  - mpi4py
+  - multiset
+  - notebook
+  - numexpr
+  - numpy
+  - oct2py
+  - octave
+  - openmpi
+  - openpmd-beamphysics
+  - pandas
+  - panel
+  - pcaspy
+  - pip
+  - pint
+  - prefect=2.14.2
+  - pyarrow>=10.0.1
+  - pyca
+  - pydantic>2.3
+  - pydm
+  - pyepics
+  - pynput
+  - pyqt
+  - pyqtgraph
+  - pyqtwebengine
+  - pytao
+  - pytest
+  - pytest-benchmark
+  - pytest-cov
+  - pytest-qt
+  - python=3.13.5
+  - python-vxi11
+  - pytorch
+  - pytz
+  - pyzmq
+  - qtpy
+  - requests
+  - scienceplots
+  - scikit-learn
+  - scikit-image
+  - scipy>=1.10.1
+  - seaborn
+  - six
+  - sqlite
+  - sqlalchemy
+  - stable-baselines3
+  - pytables
+  - tensorboard
+  - theano
+  - treelib
+  - urllib3
+  - wandb
+  - pip:
+    - cheetah-accelerator[openpmd]==0.7.3
+    - Cheetah3
+    - gymnasium[other]
+    - ipaddress
+    - matlab-wrapper
+    - opencv-contrib-python
+    - p4p
+    - rl_zoo3
+    - git+https://github.com/xopt-org/Badger
+    - git+https://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edlgenerator
+    - git+https://github.com/slaclab/edmbutton
+    - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/lcls-live
+    - git+https://github.com/slaclab/lcls-tools.git
+    - git+https://github.com/slaclab/lume-model
+    - git+https://github.com/slaclab/ml-tto
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
+    - git+https://github.com/jank324/ocelot.git
+    - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
+    - git+https://github.com/xopt-org/Xopt
+#
+# Stuff that isn't on PyPI or GitHub that is manually installed in prod
+# epics-batch-get
+# gauge-widget
+# lcls-parameters
+# logicgate
+# matlog
+# model
+# physicselog
+# wmctrl
