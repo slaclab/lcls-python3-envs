@@ -26,6 +26,8 @@ dependencies:
   - pydantic>2.3
   - pytao
   - pytest
+  - pytest-benchmark
+  - pytest-cov  
   - python=3.10
   - pytorch
   - requests
@@ -41,10 +43,15 @@ dependencies:
     - cheetah-accelerator[openpmd]==0.7.3
     - Cheetah3
     - gymnasium[other]==1.1.1
+    - matlab-wrapper
     - opencv-contrib-python
     - rl_zoo3
     - git+https://github.com/xopt-org/Badger
+    - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/jank324/ocelot.git
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
     - git+https://github.com/xopt-org/Xopt
 #
 # Stuff that isn't on PyPI or GitHub that is manually installed in prod
