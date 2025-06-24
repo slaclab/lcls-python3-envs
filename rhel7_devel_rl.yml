@@ -5,6 +5,9 @@ dependencies:
   - black
   - bmad
   - botorch
+  - cothread
+  - epics-base
+  - epicscorelibs  
   - icecream
   - impact-t
   - ipython
@@ -15,6 +18,8 @@ dependencies:
   - jupyterlab
   - keras
   - lightning
+  - lume-epics
+  - lume-impact
   - matplotlib
   - notebook
   - numexpr
@@ -24,6 +29,7 @@ dependencies:
   - pandas
   - pip
   - pydantic>2.3
+  - pyepics  
   - pytao
   - pytest
   - pytest-benchmark
@@ -47,9 +53,12 @@ dependencies:
     - opencv-contrib-python
     - rl_zoo3
     - git+https://github.com/xopt-org/Badger
+    - git+https://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edlgenerator    
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/jank324/ocelot.git
+    - git+https://github.com/slaclab/PyEmittance    
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
     - git+https://github.com/xopt-org/Xopt
