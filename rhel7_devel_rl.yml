@@ -2,13 +2,11 @@ name: rhel7_devel_rl
 channels:
   - conda-forge
 dependencies:
-  - alembic
   - bmad
   - black
   - botorch
   - caproto
   - cothread
-  - cx_oracle
   - dask
   - dateparser
   - deap
@@ -16,9 +14,6 @@ dependencies:
   - epics-base
   - epicscorelibs
   - flake8
-  - google-api-python-client
-  - google-auth-httplib2
-  - google-auth-oauthlib
   - gpy
   - greenlet
   - h5py
@@ -38,10 +33,6 @@ dependencies:
   - lume-epics
   - lume-impact  
   - matplotlib
-  - mkdocs
-  - mkdocstrings
-  - mkdocs-material
-  - mkdocs-jupyter
   - mlflow>=2.22.0
   - mock
   - mpi
@@ -59,10 +50,9 @@ dependencies:
   - pcaspy  
   - pip
   - pint
-  - prefect=2.14.2
-  - pyarrow>=10.0.1
+  - pyarrow
   - pyca  
-  - pydantic>2.3
+  - pydantic
   - pyepics
   - pynput  
   - pytao
@@ -70,7 +60,6 @@ dependencies:
   - pytest-benchmark
   - pytest-cov
   - python=3.12
-  - python-vxi11
   - pytorch
   - pytz
   - pyzmq  
@@ -78,13 +67,11 @@ dependencies:
   - scienceplots
   - scikit-learn
   - scikit-image
-  - scipy>=1.10.1
+  - scipy
   - seaborn
   - six
-  - sqlite
-  - sqlalchemy  
   - stable-baselines3
-  - pytables  
+  - pytables
   - tensorboard
   - theano
   - treelib  
@@ -92,9 +79,7 @@ dependencies:
   - wandb
   - pip:
     - cheetah-accelerator[openpmd]==0.7.3
-    - Cheetah3
     - gymnasium[other]>=1.1.1
-    - ipaddress
     - matlab-wrapper
     - opencv-contrib-python
     - p4p
@@ -102,14 +87,11 @@ dependencies:
     - git+https://github.com/xopt-org/Badger
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
-    - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/slaclab/lcls-live
     - git+https://github.com/slaclab/lcls-tools.git
     - git+https://github.com/slaclab/lume-model
     - git+https://github.com/slaclab/ml-tto
-    - git+https://github.com/slaclab/mps_database
-    - git+https://github.com/slaclab/mps_history    
     - git+https://github.com/jank324/ocelot.git
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
