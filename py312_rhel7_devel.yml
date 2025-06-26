@@ -75,7 +75,7 @@ dependencies:
   - pytest-benchmark
   - pytest-cov
   - pytest-qt
-  - python=3.12
+  - python=3.11
   - python-vxi11
   - pytorch
   - pytz
