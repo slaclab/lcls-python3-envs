@@ -38,12 +38,12 @@ dependencies:
   - lightning
   - lume-epics
   - lume-impact
-  - matplotlib<3.9
+  - matplotlib
   - mkdocs
   - mkdocstrings
   - mkdocs-material
   - mkdocs-jupyter
-  - mlflow>=2.22.0
+  - mlflow
   - mock
   - mpi
   - mpi4py
@@ -60,10 +60,10 @@ dependencies:
   - pcaspy
   - pip
   - pint
-  - prefect=2.14.2
-  - pyarrow>=10.0.1
+  - prefect
+  - pyarrow
   - pyca
-  - pydantic>2.3
+  - pydantic
   - pydm
   - pyepics
   - pynput
