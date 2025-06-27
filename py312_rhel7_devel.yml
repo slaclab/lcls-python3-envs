@@ -122,7 +122,7 @@ dependencies:
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/slaclab/ScPatternSelect
+    - git@github.com:slaclab/ScPatternSelect.git
 
 #
 # Stuff that isn't on PyPI, conda-forge, or GitHub that is manually installed in prod
