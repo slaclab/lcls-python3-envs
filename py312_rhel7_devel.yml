@@ -3,13 +3,13 @@ channels:
   - conda-forge
 dependencies:
   - alembic
+  - bayesian-optimization
   - bmad
   - black
   - blosc
   - bokeh
   - botorch
   - caproto
-  - cothread
   - cx_oracle
   - dask
   - dateparser
@@ -17,15 +17,17 @@ dependencies:
   - dm-tree
   - epics-base
   - epicscorelibs
+  - flake8
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
+  - gpflow
   - gpy
   - greenlet
-  - gym
   - h5py
   - hdf5
   - holoviews
+  - imageio
   - img2pdf
   - impact-t
   - ipython
@@ -36,14 +38,14 @@ dependencies:
   - kafka-python
   - keras
   - lightning
-  - lume-epics
   - lume-impact
+  - lume-model
   - matplotlib
   - mkdocs
   - mkdocstrings
   - mkdocs-material
   - mkdocs-jupyter
-  - mlflow
+  - mlflow>=2.22.0
   - mock
   - mpi
   - mpi4py
@@ -55,6 +57,7 @@ dependencies:
   - octave
   - openmpi
   - openpmd-beamphysics
+  - openpyxl
   - pandas
   - panel
   - pcaspy
@@ -70,12 +73,15 @@ dependencies:
   - pyqt
   - pyqtgraph
   - pyqtwebengine
+  - pyside6
   - pytao
   - pytest
   - pytest-benchmark
   - pytest-cov
   - pytest-qt
-  - python=3.11
+  - python=3.12
+  - python-confluent-kafka
+  - python-mss
   - python-vxi11
   - pytorch
   - pytz
@@ -91,16 +97,41 @@ dependencies:
   - sqlalchemy
   - pytables
   - tensorboard
-  - theano
   - treelib
   - urllib3
+  - xopt
+  - pip:
+    - cheetah-accelerator
+    - cothread  # Version on conda-forge no longer updated past python 3.10
+    - gymnasium
+    - ipaddress
+    - matlab-wrapper
+    - opencv-contrib-python
+    - p4p
+    - slac-alarm-manager
+    - git+https://github.com/xopt-org/Badger
+    - git+https://github.com/slaclab/edef
+    - git+https://github.com/slaclab/edlgenerator
+    - git+https://github.com/slaclab/edmbutton
+    - git+https://github.com/dylanmkennedy/emitopt
+    - git+https://github.com/slaclab/lcls-live
+    - git+https://github.com/slaclab/lcls-tools.git
+    - git+https://github.com/slaclab/lume-epics.git  # Has p4p as a dependency, but p4p is not updated on conda-forge anymore
+    - git+https://github.com/slaclab/mps_database
+    - git+https://github.com/slaclab/mps_history
+    - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/slaclab/slacepics
+    - git+https://github.com/slaclab/subprocessca
+    - git+https://github.com/slaclab/ScPatternSelect
+
 #
-# Stuff that isn't on PyPI or GitHub that is manually installed in prod
+# Stuff that isn't on PyPI, conda-forge, or GitHub that is manually installed in prod
 # epics-batch-get
 # gauge-widget
 # lcls-parameters
 # logicgate
 # matlog
+# meme
 # model
 # physicselog
 # wmctrl
