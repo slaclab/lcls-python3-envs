@@ -83,7 +83,7 @@ dependencies:
   - python-confluent-kafka
   - python-mss
   - python-vxi11
-  - pytorch
+  - pytorch=2.7.1
   - pytz
   - pyzmq
   - qtpy
