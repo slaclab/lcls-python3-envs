@@ -21,7 +21,6 @@ dependencies:
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
-  - gpy
   - greenlet
   - h5py
   - hdf5
