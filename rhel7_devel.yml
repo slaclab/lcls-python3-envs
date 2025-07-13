@@ -9,7 +9,6 @@ dependencies:
   - bokeh
   - botorch
   - caproto
-  - cothread
   - cx_oracle
   - dask
   - dateparser
@@ -95,6 +94,7 @@ dependencies:
   - pip:
     - cheetah-accelerator
     - Cheetah3
+    - cothread  # Version on conda-forge no longer updated past python 3.10/numpy 1.X
     - gymnasium
     - ipaddress
     - matlab-wrapper
