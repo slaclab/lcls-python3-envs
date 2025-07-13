@@ -21,7 +21,6 @@ dependencies:
   - google-auth-httplib2
   - google-auth-oauthlib
   - greenlet
-  - gym
   - h5py
   - hdf5
   - holoviews
@@ -96,6 +95,7 @@ dependencies:
   - pip:
     - cheetah-accelerator
     - Cheetah3
+    - gymnasium
     - ipaddress
     - matlab-wrapper
     - opencv-contrib-python
