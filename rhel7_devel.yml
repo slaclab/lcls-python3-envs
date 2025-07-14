@@ -86,6 +86,7 @@ dependencies:
   - sqlite
   - sqlalchemy
   - pytables
+  - tenacity
   - tensorboard
   - theano
   - treelib
