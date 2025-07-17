@@ -37,7 +37,7 @@ dependencies:
   - lightning
   - lume-epics
   - lume-impact
-  - matplotlib<3.9
+  - matplotlib
   - mkdocs
   - mkdocstrings
   - mkdocs-material
@@ -49,7 +49,7 @@ dependencies:
   - multiset
   - notebook
   - numexpr
-  - numpy
+  - numpy==1.26.4
   - oct2py
   - octave
   - openmpi
@@ -59,10 +59,9 @@ dependencies:
   - pcaspy
   - pip
   - pint
-  - prefect=2.14.2
-  - pyarrow>=10.0.1
+  - pyarrow
   - pyca
-  - pydantic>2.3
+  - pydantic
   - pydm
   - pyepics
   - pynput
@@ -83,7 +82,7 @@ dependencies:
   - requests
   - scikit-learn
   - scikit-image
-  - scipy>=1.10.1
+  - scipy
   - seaborn
   - six
   - sqlite
@@ -92,7 +91,7 @@ dependencies:
   - tensorboard
   - theano
   - treelib
-  - urllib3>=2.4.0
+  - urllib3
   - pip:
     - Cheetah3
     - ipaddress
