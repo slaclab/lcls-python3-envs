@@ -93,6 +93,7 @@ dependencies:
   - six
   - sqlite
   - sqlalchemy
+  - tenacity
   - pytables
   - tensorboard
   - treelib
