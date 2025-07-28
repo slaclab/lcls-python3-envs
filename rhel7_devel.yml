@@ -46,7 +46,7 @@ dependencies:
   - multiset
   - notebook
   - numexpr
-  - numpy=2.2.6
+  - numpy
   - oct2py
   - octave
   - openmpi
@@ -56,10 +56,10 @@ dependencies:
   - pcaspy
   - pip
   - pint
-  - prefect=2.14.2
-  - pyarrow>=10.0.1
+  - prefect
+  - pyarrow
   - pyca
-  - pydantic>2.3
+  - pydantic
   - pydm
   - pyepics
   - pynput
@@ -71,7 +71,7 @@ dependencies:
   - pytest-benchmark
   - pytest-cov
   - pytest-qt
-  - python=3.10
+  - python=3.12
   - python-vxi11
   - pytorch
   - pytz
