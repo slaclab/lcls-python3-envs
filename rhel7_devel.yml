@@ -34,7 +34,7 @@ dependencies:
   - keras
   - lightning
   - lume-impact
-  - matplotlib<3.9
+  - matplotlib
   - mkdocs
   - mkdocstrings
   - mkdocs-material
@@ -106,9 +106,9 @@ dependencies:
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
-    - git+https://github.com/slaclab/lcls-live
+    #- git+https://github.com/slaclab/lcls-live  # Doesn't build with python 3.12 due to versioneer at the moment, fill fix shortly
     - git+https://github.com/slaclab/lcls-tools.git
-    - git+https://github.com/slaclab/lume-epics.git 
+    #- git+https://github.com/slaclab/lume-epics.git  # Has p4p as a dependency, but p4p is not updated on conda-forge anymore, also doesn't build with python 3.12 due to versioneer at the moment, but is fixed on a recent branch
     - git+https://github.com/slaclab/lume-model
     - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/slaclab/mps_database
