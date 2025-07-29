@@ -89,7 +89,6 @@ dependencies:
   - sqlalchemy
   - pytables
   - tensorboard
-  - theano
   - treelib
   - urllib3
   - pip:

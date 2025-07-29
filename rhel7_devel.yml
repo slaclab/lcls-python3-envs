@@ -88,7 +88,6 @@ dependencies:
   - pytables
   - tenacity
   - tensorboard
-  - theano
   - treelib
   - urllib3
   - pip:
