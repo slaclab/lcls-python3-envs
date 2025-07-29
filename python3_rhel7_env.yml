@@ -3,14 +3,13 @@ channels:
   - conda-forge
 dependencies:
   - alembic
-  - bmad
   - bayesian-optimization
   - black
   - blosc
+  - bmad
   - bokeh
   - botorch
   - caproto
-  - cothread
   - cx_oracle
   - dask
   - dateparser
@@ -22,10 +21,7 @@ dependencies:
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
-  - gpflow
-  - gpy
   - greenlet
-  - gym
   - h5py
   - hdf5
   - holoviews
@@ -39,11 +35,10 @@ dependencies:
   - jupyterlab
   - kafka-python
   - keras
-  - libpython-static
-  - lume-epics
+  - lightning
   - lume-impact
   - lume-model
-  - matplotlib<3.9
+  - matplotlib
   - mkdocs
   - mkdocstrings
   - mkdocs-material
@@ -56,6 +51,8 @@ dependencies:
   - notebook
   - numexpr
   - numpy
+  - oct2py
+  - octave
   - openmpi
   - openpmd-beamphysics
   - openpyxl
@@ -64,43 +61,48 @@ dependencies:
   - pcaspy
   - pip
   - pint
+  - prefect
+  - pyarrow
   - pyca
-  - pydantic>=2.3
+  - pydantic
   - pydm
   - pyepics
   - pynput
   - pyqt
   - pyqtgraph
   - pyqtwebengine
+  - pyside6
   - pytao
   - pytest
   - pytest-benchmark
   - pytest-cov
   - pytest-qt
-  - python=3.10
+  - python=3.12
   - python-confluent-kafka
   - python-mss
   - python-vxi11
-  - pytorch
+  - pytorch=2.7.1
   - pytz
   - pyzmq
   - qtpy
   - requests
   - scikit-learn
   - scikit-image
-  - scipy>=1.10.1
+  - scipy
   - seaborn
   - six
   - sqlite
   - sqlalchemy
+  - tenacity
   - pytables
-  - tensorflow
-  - tensorflow-probability
+  - tensorboard
   - treelib
-  - urllib3>=2.4.0
+  - urllib3
   - xopt
   - pip:
-    - Cheetah3
+    - cheetah-accelerator
+    - cothread  # Version on conda-forge no longer updated past python 3.10
+    - gymnasium
     - ipaddress
     - matlab-wrapper
     - opencv-contrib-python
@@ -112,15 +114,17 @@ dependencies:
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/slaclab/lcls-live
-    - git+https://github.com/slaclab/lcls-tools
+    - git+https://github.com/slaclab/lcls-tools.git
+    - git+https://github.com/slaclab/lume-epics.git
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
-    - git+https://github.com/slaclab/ScPatternSelect
+    - git+https://github.com/slaclab/ScPatternSelect.git
+
 #
-# Stuff that isn't on PyPI or GitHub that is manually installed in prod
+# Stuff that isn't on PyPI, conda-forge, or GitHub that is manually installed in prod
 # epics-batch-get
 # gauge-widget
 # lcls-parameters
