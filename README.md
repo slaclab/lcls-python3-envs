@@ -1,14 +1,14 @@
 # LCLS Python Environments
 
-A repository for holding yaml files representing conda environments for use on the SLAC network. Also includes workflows for creating and testing the environments for deployment to RHEL6 and RHEL7 machines. The environments described by the files are as follows:
+A repository for holding yaml files representing conda environments for use on the SLAC network. Environments are built and published using kubernetes jobs with the appropriate OS images. The environments described by the files are as follows:
 
 ## python3_rhel7_env
 
-This is the default environment that will be available to anyone logging into a RHEL7 box and sourcing the default startup scripts. Intended to be stable, only updated via CATER requests, suitable for running production applications.
+This is the default environment that will be available to anyone logging into a RHEL7 or above box and sourcing the default startup scripts. Intended to be stable, only updated via CATER requests, suitable for running production applications.
 
 ## rhel7_devel
 
-Updated via [cron job](https://github.com/slaclab/lcls-python3.8-env/blob/main/.github/workflows/publish_rhel7_nightly.yml) to obtain more recent versions of packages.
+Updated via a nightly cron job (10 pm) to obtain more recent versions of packages.
 
 ## rocky9_gpu_devel
 
@@ -17,10 +17,6 @@ An environment with the GPU version of PyTorch for running on CUDA capable rocky
 ## default-rhel6-environment
 
 This is the old default environment, only for use on any remaining machines still running RHEL6.
-
-## python3_devel
-
-This will be the new version of the nightly environment, built for machines running Rocky 9 (and eventually above). Not yet in use. rhel7_devel is still the go to for all machines for now.
 
 ## Documentation
 
