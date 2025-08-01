@@ -113,6 +113,7 @@ dependencies:
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/pyro-ppl/pyro.git  # Latest release (1.9.1) isn't python 3.12 compatible so install from latest source which is
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
     - git+https://github.com/xopt-org/Xopt
