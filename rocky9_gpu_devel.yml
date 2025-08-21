@@ -7,9 +7,9 @@ dependencies:
   - black
   - blosc
   - bokeh
+  - botorch
   - caproto
   - conda-pack
-  - cothread
   - cx_oracle
   - dask
   - dateparser
@@ -20,9 +20,7 @@ dependencies:
   - google-api-python-client
   - google-auth-httplib2
   - google-auth-oauthlib
-  - gpy
   - greenlet
-  - gym
   - h5py
   - hdf5
   - holoviews
@@ -35,7 +33,6 @@ dependencies:
   - jupyterlab
   - kafka-python
   - lightning
-  - lume-epics
   - lume-impact
   - matplotlib
   - mkdocs
@@ -93,6 +90,8 @@ dependencies:
   - urllib3
   - pip:
     - Cheetah3
+    - cothread  # Version on conda-forge no longer updated past python 3.10/numpy 1.X
+    - gymnasium
     - ipaddress
     - matlab-wrapper
     - opencv-contrib-python
@@ -112,6 +111,7 @@ dependencies:
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/pyro-ppl/pyro.git  # Latest release (1.9.1) isn't python 3.12 compatible so install from latest source which is    
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
     - git+https://github.com/xopt-org/Xopt
