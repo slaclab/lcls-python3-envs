@@ -10,6 +10,7 @@ dependencies:
   - botorch
   - caproto
   - cx_oracle
+  - cython
   - dask
   - dateparser
   - deap
