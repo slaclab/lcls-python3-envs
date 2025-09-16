@@ -76,6 +76,7 @@ dependencies:
   - pytorch
   - pytz
   - pyzmq
+  - qtawesome
   - qtpy
   - requests
   - scikit-learn
