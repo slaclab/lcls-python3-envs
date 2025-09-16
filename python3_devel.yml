@@ -12,6 +12,7 @@ dependencies:
   - conda-pack
   - cothread
   - cx_oracle
+  - cython
   - dask
   - dateparser
   - deap
