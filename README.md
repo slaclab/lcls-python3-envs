@@ -14,10 +14,6 @@ Updated via a nightly cron job (10 pm) to obtain more recent versions of package
 
 An environment with the GPU version of PyTorch for running on CUDA capable rocky 9 systems.
 
-## default-rhel6-environment
-
-This is the old default environment, only for use on any remaining machines still running RHEL6.
-
 ## Documentation
 
 For additional documentation including the GitHub actions that support the build and testing process please see here: https://slaclab.github.io/conda-pack-docs/
