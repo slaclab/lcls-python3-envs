@@ -16,4 +16,4 @@ An environment with the GPU version of PyTorch for running on CUDA capable rocky
 
 ## Documentation
 
-For additional documentation including the GitHub actions that support the build and testing process please see here: https://slaclab.github.io/conda-pack-docs/
+For additional documentation around how these environments are built, and the nightly environment in particular, see here: https://confluence.slac.stanford.edu/spaces/ppareg/pages/476119856/Nightly+Python+Environment
