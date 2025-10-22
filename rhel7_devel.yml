@@ -40,7 +40,6 @@ dependencies:
   - mkdocstrings
   - mkdocs-material
   - mkdocs-jupyter
-  - mlflow>=2.22.0
   - mock
   - mpi
   - mpi4py
@@ -98,6 +97,7 @@ dependencies:
     - gymnasium
     - ipaddress
     - matlab-wrapper
+    - mlflow==3.4.0
     - opencv-contrib-python
     - p4p
     - pvxslibs
