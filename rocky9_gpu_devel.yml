@@ -33,7 +33,6 @@ dependencies:
   - jupyterlab
   - kafka-python
   - lightning
-  - lume-impact
   - matplotlib
   - mkdocs
   - mkdocstrings
@@ -107,11 +106,18 @@ dependencies:
     - git+https://github.com/roussel-ryan/gpsr.git
     - git+https://github.com/slaclab/lcls-live
     - git+https://github.com/slaclab/lcls-tools.git
+    - git+https://github.com/slaclab/lume-base
     - git+https://github.com/slaclab/lume-model
+    - git+https://github.com/ChristopherMayes/lume-impact
     - git+https://github.com/slaclab/ml-tto
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/PyEmittance
     - git+https://github.com/pyro-ppl/pyro.git  # Latest release (1.9.1) isn't python 3.12 compatible so install from latest source which is    
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/subprocessca
+    - git+https://github.com/lume-science/lume-bmad
+    - git+https://github.com/lume-science/lume-cheetah
+    - git+https://github.com/lume-science/lume-torch
+    - git+https://github.com/lume-science/lume-pva
     - git+https://github.com/xopt-org/Xopt
+    - git+https://github.com/slaclab/virtual-accelerator.git
