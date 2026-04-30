@@ -32,6 +32,7 @@ dependencies:
   - jupyter
   - jupyterlab
   - kafka-python
+  - libensemble
   - lightning
   - matplotlib
   - mkdocs
@@ -104,8 +105,8 @@ dependencies:
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
     - git+https://github.com/roussel-ryan/gpsr.git
-    - git+https://github.com/slaclab/lcls-live
-    - git+https://github.com/slaclab/lcls-tools.git
+    #- git+https://github.com/slaclab/lcls-live
+    #- git+https://github.com/slaclab/lcls-tools.git
     - git+https://github.com/slaclab/lume-base
     - git+https://github.com/ChristopherMayes/lume-impact
     - git+https://github.com/slaclab/ml-tto
