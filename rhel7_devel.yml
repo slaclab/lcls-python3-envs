@@ -33,6 +33,7 @@ dependencies:
   - jupyterlab
   - kafka-python
   - keras
+  - libensemble
   - lightning
   - matplotlib
   - mkdocs
