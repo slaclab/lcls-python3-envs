@@ -104,7 +104,7 @@ dependencies:
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
     - git+https://github.com/dylanmkennedy/emitopt
-    - git+https://github.com/roussel-ryan/gpsr.git
+    #- git+https://github.com/roussel-ryan/gpsr.git
     #- git+https://github.com/slaclab/lcls-live
     #- git+https://github.com/slaclab/lcls-tools.git
     - git+https://github.com/slaclab/lume-base
