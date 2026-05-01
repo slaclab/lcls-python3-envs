@@ -104,6 +104,7 @@ dependencies:
     - slac-alarm-manager
     - git+https://github.com/xopt-org/Badger
     - git+https://github.com/xopt-org/Xopt
+    - git+https://github.com/xopt-org/bax_algorithms
     - git+https://github.com/slaclab/edef
     - git+https://github.com/slaclab/edlgenerator
     - git+https://github.com/slaclab/edmbutton
