@@ -127,7 +127,7 @@ dependencies:
     - git+https://github.com/slaclab/slac-devices
     - git+https://github.com/slaclab/slac-measurements
     - git+https://github.com/slaclab/slac-timing
-    - git+https://github.com/slaclab/slac-tools
+    #- git+https://github.com/slaclab/slac-tools  # No actual code here yet so leads to a "neither setup.py nor pyproject.toml found" error if included
     - git+https://github.com/slaclab/slacepics
     - git+https://github.com/slaclab/slacwire
     - git+https://github.com/slaclab/subprocessca
