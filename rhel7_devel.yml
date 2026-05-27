@@ -124,7 +124,7 @@ dependencies:
     - git+https://github.com/lume-science/lume-pva
     - git+https://github.com/pyro-ppl/pyro.git  # Latest release (1.9.1) isn't python 3.12 compatible so install from latest source which is
     #- git+https://github.com/slaclab/slac-db # Let something else install slac-db to avoid conflicting versions error
-    - git+https://github.com/slaclab/slac-devices
+    #- git+https://github.com/slaclab/slac-devices  # Is pulled by slac-measurements, will also have conflicting versions error if both are included
     - git+https://github.com/slaclab/slac-measurements
     - git+https://github.com/slaclab/slac-timing
     #- git+https://github.com/slaclab/slac-tools  # No actual code here yet so leads to a "neither setup.py nor pyproject.toml found" error if included
