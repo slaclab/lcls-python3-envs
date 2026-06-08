@@ -126,7 +126,7 @@ dependencies:
     #- git+https://github.com/slaclab/slac-db # Let something else install slac-db to avoid conflicting versions error
     #- git+https://github.com/slaclab/slac-devices  # Is pulled by slac-measurements, will also have conflicting versions error if both are included
     - git+https://github.com/slaclab/slac-measurements
-    - git+https://github.com/slaclab/slac-timing
+    #- git+https://github.com/slaclab/slac-timing # Is pulled by slac-measurements, will also have conflicting versions error if both are included
     #- git+https://github.com/slaclab/slac-tools  # No actual code here yet so leads to a "neither setup.py nor pyproject.toml found" error if included
     - git+https://github.com/slaclab/slacepics
     #- git+https://github.com/slaclab/slacwire  # Leaving internal repos to be added by internal systems for now
