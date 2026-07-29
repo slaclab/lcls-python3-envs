@@ -34,6 +34,11 @@ dependencies:
   - kafka-python
   - keras
   - libensemble
+  - libgcc=15.2.0
+  - libgcc-ng=15.2.0
+  - libgfortran=15.2.0
+  - libgfortran-ng=15.2.0
+  - libgfortran5=15.2.0
   - lightning
   - matplotlib
   - mkdocs
