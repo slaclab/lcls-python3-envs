@@ -122,6 +122,9 @@ dependencies:
     - git+https://github.com/slaclab/mps_database
     - git+https://github.com/slaclab/mps_history
     - git+https://github.com/slaclab/PyEmittance
+    - git+https://github.com/slaclab/py-tlib-core.git
+    - git+https://github.com/slaclab/py-tlib-db.git
+    - git+https://github.com/slaclab/py-tlib-widgets.git
     #- git+https://github.com/slaclab/slac-db # Let something else install slac-db to avoid conflicting versions error
     #- git+https://github.com/slaclab/slac-devices  # Is pulled by slac-measurements, will also have conflicting versions error if both are included
     - git+https://github.com/slaclab/slac-measurements
