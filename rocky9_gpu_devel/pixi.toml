@@ -1,0 +1,156 @@
+# Pixi manifest for the rocky9_gpu_devel nightly environment: the GPU (CUDA) variant of rhel7_devel.
+#
+# The nightly build runs `pixi install` against this file, then conda-packs the
+# resulting prefix (.pixi/envs/default) exactly as it did with the mamba-created environment.
+#
+# Supply-chain cooldown: exclude-newer below tells pixi to ignore any conda-forge or PyPI release published
+# within the last 7 days, so a compromised release has time to be noticed and yanked before it can reach us.
+# The cooldown applies only to packages fetched from a registry. Packages installed from a git URL are not
+# affected and always resolve to the current HEAD of their default branch.
+#
+# CUDA: the build machine has no GPU, so the cuda entry on the platform below tells the solver to assume the
+# __cuda virtual package is present so that CUDA builds of pytorch and friends are selected. The version is the
+# minimum driver-supported CUDA on the target machines.
+#
+# To exempt a specific registry package from the cooldown (or give it a different one), add it to one of these
+# tables. "0d" means no delay.
+#
+#   [exclude-newer]              # conda packages
+#   openssl = "0d"
+#
+#   [pypi-exclude-newer]         # PyPI packages
+#   slac-alarm-manager = "0d"
+
+[workspace]
+name = "rocky9_gpu_devel"
+channels = ["conda-forge"]
+platforms = [{ platform = "linux-64", cuda = "12.3" }]
+exclude-newer = "7d"
+
+[dependencies]
+alembic = "*"
+bmad = "*"
+black = "*"
+blosc = "*"
+bokeh = "*"
+botorch = "*"
+caproto = "*"
+conda-pack = "*"
+cx_oracle = "*"
+dask = "*"
+dateparser = "*"
+deap = "*"
+dm-tree = "*"
+epics-base = "*"
+epicscorelibs = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+greenlet = "*"
+h5py = "*"
+hdf5 = "*"
+holoviews = "*"
+img2pdf = "*"
+impact-t = "*"
+ipython = "*"
+ipywidgets = "*"
+jinja2 = "*"
+jupyter = "*"
+jupyterlab = "*"
+kafka-python = "*"
+libensemble = "*"
+lightning = "*"
+matplotlib = "*"
+mkdocs = "*"
+mkdocstrings = "*"
+mkdocs-material = "*"
+mkdocs-jupyter = "*"
+mlflow = ">=2.22.0"
+mock = "*"
+mpi = "*"
+mpi4py = "*"
+multiset = "*"
+notebook = "*"
+numexpr = "*"
+numpy = "*"
+oct2py = "*"
+octave = "*"
+openmpi = "*"
+openpmd-beamphysics = "*"
+pandas = "*"
+panel = "*"
+pcaspy = "*"
+pip = "*"
+pint = "*"
+pyarrow = "*"
+pyca = "*"
+pydantic = "*"
+pydm = "*"
+pyepics = "*"
+pynput = "*"
+pyqt = "*"
+pyqtgraph = "*"
+pyqtwebengine = "*"
+pytao = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-cov = "*"
+pytest-qt = "*"
+python = "3.12.*"
+python-vxi11 = "*"
+pytorch-gpu = "*"
+pytz = "*"
+pyzmq = "*"
+qtpy = "*"
+requests = "*"
+scikit-learn = "*"
+scikit-image = "*"
+scipy = "*"
+seaborn = "*"
+six = "*"
+sqlite = "*"
+sqlalchemy = "*"
+pytables = "*"
+tensorboard = "*"
+treelib = "*"
+urllib3 = "*"
+
+[pypi-dependencies]
+# --- Packages from PyPI (subject to the exclude-newer cooldown) ---
+cheetah3 = "*"
+cothread = "*"  # Version on conda-forge no longer updated past python 3.10/numpy 1.X
+gymnasium = "*"
+ipaddress = "*"
+matlab-wrapper = "*"
+opencv-contrib-python = "*"
+p4p = "*"
+pvxslibs = "*"
+slac-alarm-manager = "*"
+
+# --- Packages installed from git at the HEAD of their default branch (not subject to the cooldown) ---
+# The key must be the distribution name the project declares in its pyproject.toml/setup.py, which is not
+# always the same as the repository name.
+badger-opt = { git = "https://github.com/xopt-org/Badger" }
+cheetah-accelerator = { git = "https://github.com/desy-ml/cheetah" }
+edef = { git = "https://github.com/slaclab/edef" }
+edlgenerator = { git = "https://github.com/slaclab/edlgenerator" }
+edmbutton = { git = "https://github.com/slaclab/edmbutton" }
+emitopt = { git = "https://github.com/dylanmkennedy/emitopt" }
+#gpsr = { git = "https://github.com/roussel-ryan/gpsr.git" }
+#lcls-live = { git = "https://github.com/slaclab/lcls-live" }
+#lcls-tools = { git = "https://github.com/slaclab/lcls-tools.git" }
+lume-base = { git = "https://github.com/slaclab/lume-base" }
+lume-impact = { git = "https://github.com/ChristopherMayes/lume-impact" }
+ml_tto = { git = "https://github.com/slaclab/ml-tto" }
+mps_database = { git = "https://github.com/slaclab/mps_database" }
+pyemittance = { git = "https://github.com/slaclab/PyEmittance" }
+pyro-ppl = { git = "https://github.com/pyro-ppl/pyro.git" }  # Latest release (1.9.1) isn't python 3.12 compatible so install from latest source which is
+slacepics = { git = "https://github.com/slaclab/slacepics" }
+subprocessca = { git = "https://github.com/slaclab/subprocessca" }
+lume-bmad = { git = "https://github.com/lume-science/lume-bmad" }
+lume-cheetah = { git = "https://github.com/lume-science/lume-cheetah" }
+lume-torch = { git = "https://github.com/lume-science/lume-torch" }
+lume-pva = { git = "https://github.com/lume-science/lume-pva" }
+xopt = { git = "https://github.com/xopt-org/Xopt" }
+bax_algorithms = { git = "https://github.com/xopt-org/bax_algorithms" }
+virtual-accelerator = { git = "https://github.com/slaclab/virtual-accelerator.git" }
