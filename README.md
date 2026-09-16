@@ -1,6 +1,6 @@
 # LCLS Python Environments
 
-A repository for holding yaml files representing conda environments for use on the SLAC network. Environments are built and published using kubernetes jobs with the appropriate OS images. The environments described by the files are as follows:
+A repository holding the definitions of the conda environments used on the SLAC network. Environments are built and published using kubernetes jobs with the appropriate OS images. The environments described by the files are as follows:
 
 ## python3_rhel7_env
 
@@ -12,15 +12,14 @@ Updated via a nightly cron job (10 pm) to obtain more recent versions of package
 
 ## rocky9_gpu_devel
 
-An environment with the GPU version of PyTorch for running on CUDA capable rocky 9 systems.
+An environment with the GPU version of PyTorch for running on CUDA capable rocky 9 systems. Also updated via a nightly cron job (10 pm).
 
 ## Environment definitions
 
-Environments that have been migrated to [pixi](https://pixi.sh) are defined by a `pixi.toml` in a directory named after the
-environment (for example `rhel7_devel/pixi.toml`). The nightly build solves that manifest fresh each night and saves the
+Each environment is defined by a [pixi](https://pixi.sh) manifest, `pixi.toml`, in a directory named after the
+environment (for example `rhel7_devel/pixi.toml`). Nightly built ones solve that manifest fresh each night and save the
 resulting `pixi.lock` next to the published tarball. Each manifest sets `exclude-newer = "7d"`, so a conda-forge or PyPI
 release is not picked up until it has been published for at least 7 days. Packages installed from git are not delayed.
-Environments not yet migrated are still defined by an `environment.yml` file at the top level and built with mamba.
 
 ## Documentation
 

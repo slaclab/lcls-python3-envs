@@ -1,0 +1,185 @@
+# Pixi manifest for the python3_rhel7_env environment: the stable default environment, only updated via CATER requests.
+#
+# Supply-chain cooldown: exclude-newer below tells pixi to ignore any conda-forge or PyPI release published
+# within the last 7 days, so a compromised release has time to be noticed and yanked before it can reach us.
+# The cooldown applies only to packages fetched from a registry. Packages installed from a git URL are not
+# affected and always resolve to the current HEAD of their default branch.
+#
+# To exempt a specific registry package from the cooldown (or give it a different one), add it to one of these
+# tables. "0d" means no delay.
+#
+#   [exclude-newer]              # conda packages
+#   openssl = "0d"
+#
+#   [pypi-exclude-newer]         # PyPI packages
+#   slac-alarm-manager = "0d"
+
+[workspace]
+name = "python3_rhel7_env"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+exclude-newer = "7d"
+
+[pypi-options.dependency-overrides]
+# slac-db still declares "SQLAlchemy>=1.4,<2", but that pin is stale and it works fine with 2.x.
+sqlalchemy = ">=2"
+# pykern (pulled in by slac-db) pins black to the 24.x series, which conflicts with the current conda-forge black and
+# makes the resolver fall back to a 2021 pykern that no longer builds. pykern only uses black as a formatter.
+black = ">=24"
+
+[dependencies]
+alembic = "*"
+bayesian-optimization = "*"
+black = "*"
+blosc = "*"
+bmad = "*"
+bokeh = "*"
+botorch = "*"
+caproto = "*"
+cx_oracle = "*"
+cython = "*"
+dask = "*"
+dateparser = "*"
+deap = "*"
+dm-tree = "*"
+epics-base = "*"
+epicscorelibs = "*"
+flake8 = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+greenlet = "*"
+h5py = "*"
+hdf5 = "*"
+holoviews = "*"
+imageio = "*"
+img2pdf = "*"
+impact-t = "*"
+ipython = "*"
+ipywidgets = "*"
+jinja2 = "*"
+jupyter = "*"
+jupyterlab = "*"
+kafka-python = "*"
+keras = "*"
+lightning = "*"
+lume-impact = "*"
+lume-model = "*"
+matplotlib = "*"
+mkdocs = "*"
+mkdocstrings = "*"
+mkdocs-material = "*"
+mkdocs-jupyter = "*"
+mlflow = ">=2.22.0"
+mock = "*"
+mpi = "*"
+mpi4py = "*"
+multiset = "*"
+notebook = "*"
+numexpr = "*"
+numpy = "*"
+oct2py = "*"
+octave = "*"
+openmpi = "*"
+openpmd-beamphysics = "*"
+openpyxl = "*"
+pandas = "*"
+panel = "*"
+pcaspy = "*"
+pip = "*"
+pint = "*"
+prefect = "*"
+pyarrow = "*"
+pyca = "*"
+pydantic = "*"
+pydm = "*"
+pyepics = "*"
+pynput = "*"
+pyqt = "*"
+pyqtgraph = "*"
+pyqtwebengine = "*"
+pyside6 = "*"
+# lcls-live (installed from git below) requires pytao >= 1.0. The floor is stated here because the solver
+# settles on the MKL build of the pinned pytorch 2.7.1, and the older stack that comes with it drags bmad back to a
+# 2024 release with pytao 0.4.4.
+pytao = ">=1.0"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-cov = "*"
+pytest-qt = "*"
+python = "3.12.*"
+python-confluent-kafka = "*"
+python-mss = "*"
+python-vxi11 = "*"
+pytorch = "2.7.1.*"
+pytz = "*"
+pyzmq = "*"
+qtawesome = "*"
+qtpy = "*"
+requests = "*"
+scikit-learn = "*"
+scikit-image = "*"
+scipy = "*"
+seaborn = "*"
+six = "*"
+sqlite = "*"
+sqlalchemy = "*"
+tenacity = "*"
+pytables = "*"
+tensorboard = "*"
+treelib = "*"
+urllib3 = "*"
+xopt = "*"
+
+[pypi-dependencies]
+cheetah-accelerator = "*"
+cothread = "*"  # Version on conda-forge no longer updated past python 3.10
+gymnasium = "*"
+ipaddress = "*"
+matlab-wrapper = "*"
+opencv-contrib-python = "*"
+p4p = "*"
+slac-alarm-manager = "*"
+
+# --- Packages installed from git at the HEAD of their default branch ---
+# The key must be the distribution name the project declares in its pyproject.toml/setup.py, which is not
+# always the same as the repository name.
+badger-opt = { git = "https://github.com/xopt-org/Badger" }
+edef = { git = "https://github.com/slaclab/edef" }
+edlgenerator = { git = "https://github.com/slaclab/edlgenerator" }
+edmbutton = { git = "https://github.com/slaclab/edmbutton" }
+emitopt = { git = "https://github.com/dylanmkennedy/emitopt" }
+lcls-live = { git = "https://github.com/slaclab/lcls-live" }
+lcls-tools = { git = "https://github.com/slaclab/lcls-tools.git" }
+# lume-epics main (last commit June 2023) bundles a versioneer that fails under Python 3.12 (configparser.SafeConfigParser
+# was removed), so it cannot be built from the default branch. The pre-release branch has a pyproject-based build
+# that works. Switch back to the default branch once that work is merged.
+lume-epics = { git = "https://github.com/slaclab/lume-epics.git", branch = "pre-release" }
+ml_tto = { git = "https://github.com/slaclab/ml-tto" }
+mps_database = { git = "https://github.com/slaclab/mps_database" }
+#mps_history = { git = "https://github.com/slaclab/mps_history" }  # Its setup.py reads a requirements.txt that is not in the repo, so it cannot be built from git by pip or pixi until that is fixed upstream
+pyemittance = { git = "https://github.com/slaclab/PyEmittance" }
+timing_core = { git = "https://github.com/slaclab/py-tlib-core.git" }
+timing_db = { git = "https://github.com/slaclab/py-tlib-db.git" }
+timing_generator = { git = "https://github.com/slaclab/py-tlib-generator.git" }
+timing-widgets = { git = "https://github.com/slaclab/py-tlib-widgets.git" }
+#slac-db = { git = "https://github.com/slaclab/slac-db" }  # Let something else install slac-db to avoid conflicting versions error
+#slac-devices = { git = "https://github.com/slaclab/slac-devices" }  # Is pulled by slac-measurements, will also have conflicting versions error if both are included
+slac-measurements = { git = "https://github.com/slaclab/slac-measurements" }
+#slac-timing = { git = "https://github.com/slaclab/slac-timing" }  # Is pulled by slac-measurements, will also have conflicting versions error if both are included
+#slac-tools = { git = "https://github.com/slaclab/slac-tools" }  # No actual code here yet so leads to a "neither setup.py nor pyproject.toml found" error if included
+slacepics = { git = "https://github.com/slaclab/slacepics" }
+subprocessca = { git = "https://github.com/slaclab/subprocessca" }
+ScPatternSelection = { git = "https://github.com/slaclab/ScPatternSelect.git" }
+
+#
+# Stuff that isn't on PyPI, conda-forge, or GitHub that is manually installed in prod
+# epics-batch-get
+# gauge-widget
+# lcls-parameters
+# logicgate
+# matlog
+# meme
+# model
+# physicselog
+# wmctrl
