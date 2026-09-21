@@ -23,6 +23,10 @@ channels = ["conda-forge"]
 platforms = ["linux-64"]
 exclude-newer = "7d"
 
+# SLAC-developed packages taken from PyPI with shorter cooldown
+[pypi-exclude-newer]
+pvua = "3d"
+
 [pypi-options.dependency-overrides]
 # slac-db still declares "SQLAlchemy>=1.4,<2", but that pin is stale and it works fine with 2.x.
 sqlalchemy = ">=2"
@@ -136,6 +140,7 @@ ipaddress = "*"
 matlab-wrapper = "*"
 opencv-contrib-python = "*"
 p4p = "*"
+pvua = "*"
 pvxslibs = "*"
 slac-alarm-manager = "*"
 

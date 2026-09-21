@@ -27,6 +27,10 @@ channels = ["conda-forge"]
 platforms = [{ platform = "linux-64", cuda = "12.3" }]
 exclude-newer = "7d"
 
+# SLAC-developed packages taken from PyPI with shorter cooldown
+[pypi-exclude-newer]
+pvua = "3d"
+
 [dependencies]
 alembic = "*"
 bmad = "*"
@@ -124,6 +128,7 @@ ipaddress = "*"
 matlab-wrapper = "*"
 opencv-contrib-python = "*"
 p4p = "*"
+pvua = "*"
 pvxslibs = "*"
 slac-alarm-manager = "*"
 
